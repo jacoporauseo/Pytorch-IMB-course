@@ -19,7 +19,7 @@ from torch import optim
 ###### EX 1
 
 # 1. Import the data
-data = pd.read_csv(r"C:\Users\jraus\OneDrive\Documenti\Master_HSG\Python\league_of_legends_data_large.csv")
+data = pd.read_csv("league_of_legends_data_large.csv")
 
 # 2. Define X and y
 X = data.drop('win', axis=1)
@@ -295,5 +295,6 @@ ax.set_title('Feature Importance')
 
 
 plt.show()
+
 
 # gold_earned is the most important feature, cs the least important
